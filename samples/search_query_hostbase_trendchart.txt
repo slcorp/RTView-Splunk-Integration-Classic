@@ -1,0 +1,1 @@
+sourcetype=hostbase | timechart span=1m avg(usedPerCentCpu) by hostname

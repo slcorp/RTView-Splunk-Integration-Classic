@@ -1,0 +1,1 @@
+sourcetype=rtv_emsserver | dedup host sortby +_Timestamp | eval connectionCount=round(connectionCount,2), consumerCount=round(consumerCount,2), pendingMessageCount=round(pendingMessageCount,2), pendingMessageSize=round(pendingMessageSize,2) | sort host | table Timestamp, host, connectionCount, consumerCount, pendingMessageCount, pendingMessageSize

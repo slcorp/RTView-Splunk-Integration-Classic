@@ -1,0 +1,6 @@
+sourcetype=hostbase | dedup hostname sortby +_time | eval
+usedPerCentCpu=round(usedPerCentCpu,2),swapUsedPerCent=round(swapUsedPerCent,2),Me
+mUsedPerCent=round(MemUsedPerCent,2),MemFree=round(MemFree,1),VMemTotal=round(
+VMemTotal,1) | sort hostname | table
+Timestamp,hostname,OS_Description,usedPerCentCpu,MemTotal,MemFree,MemUsedPerCent
+,VMemTotal,VMemUsedPerCent,swapTotal,swapUsedPerCent,agentClass

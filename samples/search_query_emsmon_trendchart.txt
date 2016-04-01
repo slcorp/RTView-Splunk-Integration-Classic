@@ -1,0 +1,1 @@
+sourcetype=rtv_emsserver | timechart span=120m avg(consumerCount) by host

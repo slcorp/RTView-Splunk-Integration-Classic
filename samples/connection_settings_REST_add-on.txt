@@ -1,0 +1,10 @@
+Endpoint URL: http://<dataserver url:port>/hostbase_rtvquery/cache/HostStats/current
+HTTP Method: GET
+URL Arguments: fmt=json
+Response Type: json
+Response Handler: slRtvEventHandler
+Request Timeout: 10
+Backoff Time: 60
+Polling Interval: 30
+Set sourcetype: Manual
+Source type: rtv_hostbase
